@@ -5,6 +5,7 @@ const http = require('http');
 const WebSocket = require('ws');
 const aedes = require('aedes')();
 const net = require('net');
+const path = require('path');
 const Database = require('./database');
 const authRoutes = require('./routes/auth');
 const deviceRoutes = require('./routes/devices');
@@ -22,7 +23,7 @@ const db = new Database();
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Make db available to routes
 app.use((req, res, next) => {

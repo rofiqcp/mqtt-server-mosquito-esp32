@@ -20,23 +20,32 @@ Thumbs.db
 .idea/
 *.swp
 
-# Node (backend)
-backend/node_modules/
-backend/coverage/
-backend/.nyc_output/
-backend/dist/
-backend/build/
-backend/tmp/
-backend/.eslintcache
+# Node (server/backend)
+server/node_modules/
+server/coverage/
+server/.nyc_output/
+server/dist/
+server/build/
+server/tmp/
+server/.eslintcache
+server/data/*.db
+server/data/*.db-journal
 
 # PlatformIO (ESP32)
-esp32-mqtt-device/.pio/
-esp32-mqtt-device/.pioenvs/
-esp32-mqtt-device/.cache/
-esp32-mqtt-device/.ccls-cache/
-esp32-mqtt-device/.clangd
+hardware/.pio/
+hardware/.pioenvs/
+hardware/.cache/
+hardware/.ccls-cache/
+hardware/.clangd
+hardware/.vscode/
 
-# Python (simulator)
+# Python (simulator/tes-python)
+tes-python/__pycache__/
+tes-python/*.pyc
+tes-python/*.pyo
+tes-python/.pytest_cache/
+tes-python/.coverage
+tes-python/.mypy_cache/
 simulator/__pycache__/
 simulator/*.pyc
 simulator/*.pyo

@@ -2,11 +2,32 @@
 
 Sistem MQTT lengkap dengan Dashboard canggih, manajemen device, API keys, grafik real-time, dan contoh program ESP32.
 
-## Struktur Proyek
+## 🚀 Quick Start (Automated Setup)
+
+### Setup Backend (Auto-install Node.js 18 + Dependencies)
+```bash
+./setup-backend.sh
+```
+
+### Setup ESP32 Development (Auto-install Python + PlatformIO)
+```bash
+./setup-esp32.sh
+```
+
+### Run Server
+```bash
+./run-server.sh
+# or
+cd server && npm start
+```
+
+📖 **Detailed Guide**: See [SETUP_GUIDE.md](SETUP_GUIDE.md)
+
+## 📁 Struktur Proyek
 
 ```
-mosquito/
-├── backend/                  # Backend Server (Node.js)
+mqtt-server-mosquito-esp32/
+├── server/                   # 🔴 Backend Server (Node.js)
 │   ├── server.js            # Main server + MQTT Broker
 │   ├── database.js          # SQLite database handler
 │   ├── routes/              # API routes
@@ -20,19 +41,16 @@ mosquito/
 │   │   └── app.js           # Frontend logic
 │   └── package.json
 │
-├── esp32-mqtt-device/       # ESP32 PlatformIO Project
+├── hardware/                 # 🔵 ESP32 PlatformIO Project
 │   ├── src/main.cpp         # Main ESP32 program
 │   ├── include/             # Header files
 │   ├── platformio.ini       # PlatformIO configuration
 │   └── README.md            # ESP32 documentation
 │
-├── simulator/               # Python Device Simulator
-│   ├── device_simulator.py  # Multi-device simulator
-│   └── requirements.txt
-│
-├── start.sh                 # Start script
-├── test-mqtt.sh            # MQTT test script
-└── README.md               # This file
+├── setup-backend.sh          # 🚀 Auto-setup backend script
+├── setup-esp32.sh           # 🚀 Auto-setup ESP32 script
+├── run-server.sh            # ▶️ Quick run server
+└── SETUP_GUIDE.md           # 📖 Complete setup guide
 ```
 
 ## Fitur Dashboard
