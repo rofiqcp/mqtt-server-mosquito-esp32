@@ -1,0 +1,57 @@
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Node (backend)
+backend/node_modules/
+backend/coverage/
+backend/.nyc_output/
+backend/dist/
+backend/build/
+backend/tmp/
+backend/.eslintcache
+
+# PlatformIO (ESP32)
+esp32-mqtt-device/.pio/
+esp32-mqtt-device/.pioenvs/
+esp32-mqtt-device/.cache/
+esp32-mqtt-device/.ccls-cache/
+esp32-mqtt-device/.clangd
+
+# Python (simulator)
+simulator/__pycache__/
+simulator/*.pyc
+simulator/*.pyo
+simulator/.pytest_cache/
+simulator/.coverage
+simulator/.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generic build outputs
+coverage/
+.nyc_output/
+dist/
+build/
+tmp/
